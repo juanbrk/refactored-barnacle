@@ -1,0 +1,32 @@
+{
+  "name": "finance-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma de gestión de finanzas hogareñas",
+  "workspaces": [
+    "frontend",
+    "backend/functions",
+    "shared"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run serve --workspace=backend/functions",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "deploy": "npm run deploy --workspace=backend/functions"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "finance",
+    "budget",
+    "telegram-bot",
+    "firebase",
+    "react"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
