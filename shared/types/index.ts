@@ -4,6 +4,9 @@ export type TransactionType = "income" | "expense";
 export type Currency = "ARS" | "USD";
 export type UserRole = "admin" | "member";
 
+// Re-exportar tipos de reportes
+export * from './reports';
+
 export interface BaseEntity {
   id: string;
   createdAt: Date;
